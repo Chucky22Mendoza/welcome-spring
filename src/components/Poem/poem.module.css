@@ -1,0 +1,36 @@
+.poem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex: 1 0 0;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px 10px;
+  gap: 40px;
+}
+
+.text > h1, .text > p {
+  color: var(--a-brown);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text > h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text > p {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}

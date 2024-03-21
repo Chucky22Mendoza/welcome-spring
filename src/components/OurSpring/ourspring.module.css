@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex: 1 0 0;
+  padding: 20px;
+  background: rgba(61, 153, 112, 0.4);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}

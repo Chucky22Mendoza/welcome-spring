@@ -1,0 +1,31 @@
+.player {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.player button {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.player > button.playing > img:last-child {
+  animation: girarInfinito infinite linear 1s;
+  transform-origin: center center;
+}
+
+@keyframes girarInfinito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
