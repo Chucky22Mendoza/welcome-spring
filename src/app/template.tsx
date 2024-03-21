@@ -1,3 +1,4 @@
+import PageTransition from "@/components/PageTransition";
 import Player from "@/components/Player";
 
 export default function Template({
@@ -6,9 +7,9 @@ export default function Template({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <PageTransition>
       {children}
       <Player />
-    </>
+    </PageTransition>
   );
 }
